@@ -238,7 +238,7 @@ class UserController extends BaseController
         $user = User::create($attributes);
 
         // 用户注册成功后发送邮件
-        dispatch(new SendRegisterEmail($user));
+//        dispatch(new SendRegisterEmail($user));
 
         // 201 with location
         $location = dingo_route('v1', 'users.show', $user->id);
