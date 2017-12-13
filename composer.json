@@ -40,7 +40,7 @@
     "scripts": {
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\"",
-            "chmod -R 0777 app/storage"
+            "chmod -R 0777 /app/storage"
         ]
     },
     "minimum-stability": "dev",
