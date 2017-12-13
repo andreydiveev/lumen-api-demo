@@ -57,7 +57,8 @@ $ php artisan db:seed (默认添加了10个用户，50篇帖子, 100条评论)
 
 api文档在public/apidoc里面有一份，网络不好的可以直接查看本地的文档, 也可以看上面的 `项目api在线文档`
 
-我是这样生成的: apidoc -i App/Http/Controllers/Api/V1/ -o public/apidoc/
+Doc gen:
+apidoc -i app/Http/Controllers/Api/V1 -o public/apidoc
 
 ```
 如果访问一直不对，可以进入public 目录执行 `php -S localhost:8000 -t public`，然后尝试调用几个接口，从而确定是否为web服务器的配置问题。
